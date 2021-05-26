@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Votre avis sur le service du RER"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/idService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="382dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/idVenue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/idBienvenue1"
+        android:layout_width="298dp"
+        android:layout_height="38dp"
+        android:text="Bienvenue"
+        android:textColor="#00BCD4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <RadioGroup
+        android:id="@+id/idService"
+        android:layout_width="385dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/idSuivant2"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <RadioButton
+            android:id="@+id/idService1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tres satisfait"
+            android:textColor="#00BCD4"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/idService2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satisfesant"
+            android:textColor="#00BCD4"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/idService3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peu Satisfesant"
+            android:textColor="#00BCD4"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Votre avis sur l'information de RER"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/idInformation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBienvenue1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/idSuivant2"
+        android:layout_width="383dp"
+        android:layout_height="51dp"
+        android:text="Suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <RadioGroup
+        android:id="@+id/idInformation"
+        android:layout_width="382dp"
+        android:layout_height="162dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        tools:layout_editor_absoluteX="1dp">
+
+        <RadioButton
+            android:id="@+id/idInformation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tres satisfait"
+            android:textColor="#00BCD4"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/idInformation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satisfesant"
+            android:textColor="#00BCD4"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/idInformation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peu satisfesant"
+            android:textColor="#00BCD4"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
