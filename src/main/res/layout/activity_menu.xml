@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="348dp"
+        android:layout_height="167dp"
+        android:layout_marginBottom="468dp"
+        android:background="#97008A8F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/idEvenements"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="30dp"
+        android:text="Voir les Evenements"
+        app:layout_constraintBottom_toTopOf="@+id/idMesEvenements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idMesEvenements"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="30dp"
+        android:text="Mes Prochains Evenements"
+        app:layout_constraintBottom_toTopOf="@+id/idProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idProfile"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="80dp"
+        android:text="Mon Profil"
+        app:layout_constraintBottom_toTopOf="@+id/idDeconnexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idDeconnexion"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="28dp"
+        android:text="Deconnexion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
